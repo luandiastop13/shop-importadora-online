@@ -1,0 +1,6 @@
+/* Stock and margin visibility V45 */
+#stock .prodInfoRow{gap:8px!important;align-items:center!important;flex-wrap:wrap!important;margin-top:10px!important}
+#stock .prodStockPill,#stock .prodProfitPill{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:30px!important;padding:7px 11px!important;border-radius:999px!important;font-size:12.5px!important;font-weight:900!important;line-height:1.08!important;letter-spacing:.01em!important;white-space:nowrap!important}
+#stock .prodStockPill{font-size:13px!important;font-weight:950!important}
+#stock .prodProfitPill{font-size:12.5px!important;font-weight:900!important}
+@media(max-width:560px){#stock .prodInfoRow{gap:7px!important;margin-top:9px!important}#stock .prodStockPill,#stock .prodProfitPill{min-height:29px!important;padding:7px 10px!important}#stock .prodStockPill{font-size:12.5px!important}#stock .prodProfitPill{font-size:12px!important}}
