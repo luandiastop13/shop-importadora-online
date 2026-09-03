@@ -1,0 +1,11 @@
+/* Commercial product labels V40 */
+.premiumProdImage,.prod>.img,#detailMainImage{position:relative}
+.promoBadgeV40{position:absolute;z-index:5;top:8px;left:8px;display:inline-flex;align-items:center;max-width:calc(100% - 16px);padding:5px 8px;border-radius:999px;font-size:6.5px;font-weight:1000;letter-spacing:.055em;line-height:1;white-space:nowrap;color:#fff;background:#252c34;border:1px solid #ffffff22;box-shadow:0 5px 16px #0008;pointer-events:none}
+.promoBadgeV40.promo-novo{background:#1776d2;border-color:#68adf2}
+.promoBadgeV40.promo-oferta{background:#e52535;border-color:#ff707b}
+.promoBadgeV40.promo-mais-vendido{background:#a96c0c;border-color:#e7ac45}
+.promoBadgeV40.promo-ultimas-unidades{background:#c95b18;border-color:#f79a59}
+.detailPromoBadgeV40{top:12px;left:12px;padding:7px 10px;font-size:7.5px}
+.promoLabelControlV40{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(150px,220px);align-items:center;gap:10px;padding:11px 12px;border:1px solid #3a3034;background:#171316;border-radius:14px}
+.promoLabelControlV40>div{min-width:0}.promoLabelControlV40 b{display:block;font-size:9px}.promoLabelControlV40 small{display:block;margin-top:3px;color:#89939d;font-size:6.5px}.promoLabelControlV40 .field{width:100%;margin:0}
+@media(max-width:560px){.promoLabelControlV40{grid-template-columns:1fr}.promoBadgeV40{top:6px;left:6px;padding:5px 7px;font-size:6px}.detailPromoBadgeV40{top:10px;left:10px;font-size:7px}}
