@@ -69,3 +69,82 @@
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',applyReadabilityV67,{once:true});else applyReadabilityV67();
 })();
+
+/* V67.1 — hierarquia de leitura equilibrada */
+(()=>{
+  function applyHierarchyV671(){
+    if(document.getElementById('readabilityHierarchyV671'))return;
+    const s=document.createElement('style');
+    s.id='readabilityHierarchyV671';
+    s.textContent=`
+      /* Navegação inferior */
+      .bottom button{font-size:13.5px!important;min-height:58px!important;font-weight:850!important;line-height:1.15!important}
+      .bottom button b{font-size:21px!important}
+
+      /* Cards de produto */
+      #home .prodName,#stock .prodName,#home .premiumProdCard .prodName,#stock .premiumProdCard .prodName,
+      #home .prod h3,#stock .prod h3{font-size:15.5px!important;line-height:1.32!important;min-height:41px!important;font-weight:900!important}
+      #home .prod .price,#stock .prod .price,#home .premiumProdCard .price,#stock .premiumProdCard .price{font-size:19px!important;line-height:1.15!important;font-weight:950!important}
+      #home .oldPrice,#stock .oldPrice{font-size:12px!important}
+      #home .prodBrand,#stock .prodBrand,#home .prodSku,#stock .prodSku{font-size:12.5px!important}
+      #home .prodStockPill,#stock .prodStockPill,#home .prodProfitPill,#stock .prodProfitPill{font-size:12.5px!important;min-height:30px!important}
+      #home .prodActions .btn,#stock .prodActions .btn,#home .premiumActions>.btn,#stock .premiumActions>.btn{font-size:14.5px!important;min-height:44px!important}
+      .quickQtyInput,.quickStep{font-size:15px!important;min-height:42px!important}
+      .quickRemoveInline{font-size:12.5px!important}
+
+      /* Carrinho */
+      #cart .premiumCartHead h2{font-size:24px!important}
+      #cart .premiumCartHead p{font-size:13px!important}
+      #cart .premiumCartCount{font-size:12.5px!important}
+      #cart .premiumCartName{font-size:15.5px!important;line-height:1.32!important;font-weight:900!important}
+      #cart .premiumCartMeta span,#cart .premiumCartMeta small{font-size:12px!important}
+      #cart .premiumCartUnit{font-size:14px!important;font-weight:850!important}
+      #cart .premiumCartUnit small,#cart .premiumCartUnit em{font-size:12px!important}
+      #cart .premiumCartControls button,#cart .premiumCartControls input{font-size:15px!important;min-height:42px!important}
+      #cart .premiumCartRemove{font-size:12.5px!important}
+      #cart .premiumCartLineTotal small,#cart .premiumCartLineTotal span{font-size:12px!important}
+      #cart .premiumCartLineTotal strong{font-size:18px!important}
+      #cart .premiumCartSummaryTop span,#cart .premiumCartSubtotal small{font-size:13px!important}
+      #cart .premiumCartSummaryTop small,#cart .premiumCartSubtotal span,#cart .premiumCartBenefits span{font-size:12.5px!important}
+      #cart .premiumCartSummaryTop strong,#cart .premiumCartSubtotal strong{font-size:19px!important}
+      #cart .premiumCheckoutBtn{font-size:15px!important;min-height:48px!important}
+      #cart .premiumContinueShopping{font-size:13px!important}
+
+      /* Pedidos */
+      #orders .approvedOrdersHead h2{font-size:24px!important}
+      #orders .approvedOrdersHead p{font-size:13px!important}
+      #orders .approvedOrdersCount{font-size:13px!important}
+      #orders .approvedOrderFilter{font-size:13px!important;min-height:38px!important}
+      #orders .approvedOrderTop b{font-size:15.5px!important;line-height:1.3!important}
+      #orders .approvedOrderTop small{font-size:12.5px!important}
+      #orders .approvedStatus{font-size:12px!important;padding:6px 8px!important}
+      #orders .approvedOrderAmount small{font-size:12px!important}
+      #orders .approvedOrderAmount strong{font-size:19px!important}
+      #orders .approvedPay{font-size:12px!important}
+      #orders .approvedOrderMeta small{font-size:11.5px!important}
+      #orders .approvedOrderMeta b{font-size:13px!important}
+      #orders .approvedStep span{font-size:11.5px!important}
+      #orders .approvedOrderActions .btn{font-size:14px!important;min-height:44px!important}
+
+      /* Conta, checkout e admin: legíveis sem excesso */
+      .accountHead h2,.catalogHead h2,.adminTop h2,.stockHead h2{font-size:23px!important}
+      .accountHead p,.catalogHead p{font-size:13px!important}
+      .clientNav button,.nav button{font-size:14px!important}
+      .approvedCheckoutCardHead b{font-size:14px!important}
+      .approvedCheckoutCardHead small,.approvedCheckoutTitle .mut{font-size:11.5px!important}
+      .approvedCheckoutStep{font-size:12.5px!important}
+      input,select,textarea,.field{font-size:16px!important}
+
+      @media(max-width:700px){
+        .bottom button{font-size:13px!important}
+        #home .prodName,#stock .prodName,#home .premiumProdCard .prodName,#stock .premiumProdCard .prodName,#home .prod h3,#stock .prod h3{font-size:15px!important}
+        #home .prod .price,#stock .prod .price,#home .premiumProdCard .price,#stock .premiumProdCard .price{font-size:18.5px!important}
+        #cart .premiumCartName{font-size:15px!important}
+        #orders .approvedOrderTop b{font-size:15px!important}
+      }
+    `;
+    document.head.appendChild(s);
+    document.documentElement.dataset.readabilityHierarchy='v67.1';
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',applyHierarchyV671,{once:true});else applyHierarchyV671();
+})();
