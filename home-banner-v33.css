@@ -1,0 +1,8 @@
+/* Home banner size V33 — mobile only */
+@media (max-width:700px){
+  #home .homeBannerGraphic{margin:10px 0 12px;border-radius:16px;overflow:hidden;}
+  #home .homeBannerGraphic img{width:100%!important;height:clamp(150px,42vw,175px)!important;aspect-ratio:auto!important;object-fit:cover!important;object-position:center center!important;display:block!important;}
+}
+@media (max-width:390px){
+  #home .homeBannerGraphic img{height:clamp(150px,43vw,168px)!important;}
+}
