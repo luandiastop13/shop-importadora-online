@@ -1,0 +1,3 @@
+
+/* Margin fallback and shared card visibility V46 */
+(()=>{const baseCard=typeof proCard==='function'?proCard:card;function withMargin(x){let h=baseCard(x);if(!h||!h.includes('prodInfoRow')||h.includes('prodProfitPill'))return h;const target='</div><div class="prodActions';const pill='<span class="prodProfitPill noMarginV46">Margem não informada</span>';return h.includes(target)?h.replace(target,pill+target):h}proCard=withMargin;card=withMargin;function repaint(){try{renderProducts?.();if(typeof paintHomeFeaturedV37==='function')paintHomeFeaturedV37();}catch(e){console.warn('margin v46',e)}}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(repaint,0),{once:true});else setTimeout(repaint,0);})();
