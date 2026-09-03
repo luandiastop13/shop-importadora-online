@@ -1,0 +1,15 @@
+/* Single commercial label V42 */
+.promoBadgeV40,.promoBadgeV40.promo-novo,.promoBadgeV40.promo-oferta,.promoBadgeV40.promo-mais-vendido,.promoBadgeV40.promo-ultimas-unidades{
+  background:#df1728!important;color:#fff!important;border:2px solid #ff6673!important;box-shadow:none!important;
+  padding:7px 11px!important;min-height:28px!important;border-radius:999px!important;font-size:8.5px!important;font-weight:1000!important;
+  letter-spacing:.055em!important;line-height:1!important;opacity:1!important;transform-origin:center!important;
+  animation:promoPulseV42 1.25s ease-in-out infinite!important;will-change:opacity,transform,background-color!important
+}
+#detailMainImage .detailPromoBadgeV40{
+  display:inline-flex!important;top:12px!important;left:12px!important;padding:9px 15px!important;min-height:34px!important;font-size:11px!important;
+  background:#df1728!important;color:#fff!important;border:2px solid #ff6673!important;box-shadow:none!important;
+  animation:promoPulseV42 1.25s ease-in-out infinite!important;opacity:1!important;z-index:9!important
+}
+#detailMainImage .detailPromoBadgeV41{display:none!important}
+@keyframes promoPulseV42{0%,100%{opacity:.34;background:#a90d1b;transform:scale(.97)}50%{opacity:1;background:#f32639;transform:scale(1.045)}}
+@media(max-width:560px){.promoBadgeV40,.promoBadgeV40.promo-novo,.promoBadgeV40.promo-oferta,.promoBadgeV40.promo-mais-vendido,.promoBadgeV40.promo-ultimas-unidades{padding:7px 10px!important;min-height:27px!important;font-size:8px!important}#detailMainImage .detailPromoBadgeV40{top:10px!important;left:10px!important;padding:9px 14px!important;min-height:33px!important;font-size:10.5px!important}}
